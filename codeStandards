@@ -1,0 +1,107 @@
+<---------------------html---start----------------------->
+1.HTML 属性应当按照以下给出的顺序依次排列，确保代码的易读性。
+class
+id, name
+data-*
+src, for, type, href
+title, alt
+aria-*, role
+
+2.尽量避免多余的父元素。
+
+3.通过 JavaScript 生成的标签让内容变得不易查找、编辑，并且降低性能。能避免时尽量避免。
+<---------------------html---end------------------------->
+
+
+<---------------------css---start------------------------>
+1. /* Good CSS */
+.selector,
+.selector-secondary,
+.selector[type="text"] {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(0,0,0,.5);
+  box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+
+2.相关的属性声明应当归为一组，并按照下面的顺序排列：
+  Positioning  Box model  Typographic  Visual
+  .declaration-order {
+    /* Positioning */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+
+    /* Box-model */
+    display: block;
+    float: right;
+    width: 100px;
+    height: 100px;
+
+    /* Typography */
+    font: normal 13px "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+    color: #333;
+    text-align: center;
+
+    /* Visual */
+    background-color: #f5f5f5;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    /* Misc */
+    opacity: 1;
+  }
+
+3.当使用特定厂商的带有前缀的属性时，通过缩进的方式，让每个属性的值在垂直方向对齐，这样便于多行编辑。
+.selector {
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+
+4.对于只包含一条声明的样式，为了易读性和便于快速编辑，建议将语句放在同一行。对于带有多条声明的样式，还是应当将声明分为多行。
+
+  这样做的关键因素是为了错误检测 -- 例如，CSS 校验器指出在 183 行有语法错误。如果是单行单条声明，你就不会忽略这个错误；如果是单行多条声明的话，你就要仔细分析避免漏掉错误了。
+  .sprite {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/sprite.png);
+  }
+  .icon           { background-position: 0 0; }
+  .icon-home      { background-position: 0 -20px; }
+  .icon-account   { background-position: 0 -40px; }
+
+5.Less 和 Sass 中的嵌套
+  避免非必要的嵌套。这是因为虽然你可以使用嵌套，但是并不意味着应该使用嵌套。只有在必须将样式限制在父元素内（也就是后代选择器），并且存在多个需要嵌套的元素时才使用嵌套。
+  // Without nesting
+  .table > thead > tr > th { … }
+  .table > thead > tr > td { … }
+
+  // With nesting
+  .table > thead > tr {
+    > th { … }
+    > td { … }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

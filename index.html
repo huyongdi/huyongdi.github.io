@@ -1,20 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--为了确保适当的绘制和触屏缩放-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>半仙</title>
-    <link rel="stylesheet" type="text/css" href="static/style/reset.css">
-    <link rel="stylesheet" type="text/css" href="static/style/base.css">
-    <link rel="stylesheet" type="text/css" href="static/style/main.css">
+    <!--<link rel="stylesheet" href="static/style/main.css">-->
+    <link rel="stylesheet/less" href="static/style/main.less">
 </head>
 <body>
-    <canvas id="canvas-club"></canvas>
+<div class="center">
+
+    <div class="slider" data-pos="0">
+        <div class="slider__slides">
+            <div class="slider__slide"></div>
+            <div class="slider__slide"></div>
+            <div class="slider__slide"></div>
+            <div class="slider__slide"></div>
+        </div>
+        <div class="slider__dots">
+            <a href="#" class="slider__indicator"></a>
+            <a href="#" class="slider__dot" data-pos="0"></a>
+            <a href="#" class="slider__dot" data-pos="1"></a>
+            <a href="#" class="slider__dot" data-pos="2"></a>
+            <a href="#" class="slider__dot" data-pos="3"></a>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
-<script src="static/js/sea.js" type="text/javascript"></script>
-<script src="static/js/config.js" type="text/javascript"></script>
+
+<script src="static/plugin/seaJs/sea.js"></script>
+<script src="static/plugin/seaJs/seaJs-css.js"></script>
+<script src="static/js/config.js"></script>
+
 <script type="text/javascript">
-    seajs.use("index", function (mod) {
-        mod.hyd();
+    seajs.use(["js/index", "style/main.css"], function (mod) {
+        mod.init();
     });
 </script>

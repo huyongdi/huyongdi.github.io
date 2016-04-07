@@ -1,12 +1,10 @@
 seajs.config({
+  base: "./static",
   // 别名配置
   alias: {
-    // 通用框架模块
-    "jquery": "../plugin/jquery/1.7.2/jquery",
-
-    // 当前项目自定义模块
+    "jquery": "../plugin/jquery/jquery-1.12.3",
     "CommonOperation": "../js/CommonOperation",
-
+    "less": "../plugin/less/less.min",
   },
   // 映射配置
   map: [
