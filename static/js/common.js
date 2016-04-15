@@ -2,9 +2,9 @@
 define(function (require, exports, module) {
   var $ = require("jquery");
   
-  function CommonOperation() {
+  function common() {
 
     
-    module.exports = CommonOperation;
+    module.exports = common;
   }
 });
