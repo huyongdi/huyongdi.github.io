@@ -10,10 +10,15 @@ define(function (require, exports, module) {
 
 
   function init() {
+    setInit(); //初始化一些设置
     navSearch();//导航上面的搜索按钮
+    carouselInit();//轮播设置
+  }
+
+  function setInit() {
     Messenger.options = {
       extraClasses: 'messenger-fixed messenger-on-top',
-       theme: 'future'
+      theme: 'future'
     };
   }
 
@@ -21,7 +26,7 @@ define(function (require, exports, module) {
     $("#nav_search").off("click").on("click",function () {
       var name = $("#nav_input").val();
       var flag = false;
-      var person = ["苍井空","小泽玛利亚","波多野结衣",];
+      var person = ["苍井空","小泽玛利亚","波多野结衣"];
       $.each(person,function (i,item) {
         if(name == item){
           flag = true;
@@ -33,6 +38,10 @@ define(function (require, exports, module) {
         })
       }
     });
+  }
+  
+  function carouselInit() {
+    $('.carousel').carousel();
   }
   
   module.exports = {
