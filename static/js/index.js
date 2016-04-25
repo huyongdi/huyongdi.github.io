@@ -6,7 +6,7 @@ define(function (require, exports, module) {
   var Common = require("common");
   var common = new Common;
   require("messenger");
-  require("camera");
+//   require("camera");
 
 
 
@@ -42,7 +42,7 @@ define(function (require, exports, module) {
   }
   
   function carouselInit() {
-    
+    $('#carousel').camera();
   }
   
   module.exports = {
