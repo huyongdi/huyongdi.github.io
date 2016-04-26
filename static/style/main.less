@@ -1,8 +1,5 @@
-@color: #4D926F;
 
-h2 {
-  color: @color;
-}
+@width:1000px;
 
 .nav_img {
   width: 50px;
@@ -10,12 +7,8 @@ h2 {
   margin-top: -10px;
 }
 
-circle {
-  -webkit-transition: stroke-dasharray .25s;
-  transition: stroke-dasharray .25s;
-}
 .fluid_container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: @width;
   width: 90%;
 }
