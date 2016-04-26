@@ -36,6 +36,8 @@
 */
 
 // t: current time, b: begInnIng value, c: change In value, d: duration
+define(function (require, exports, module) {
+	var jQuery = require("plugin/jquery/jquery-1.12.3");
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
@@ -170,7 +172,7 @@ jQuery.extend( jQuery.easing,
 		return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
 	}
 });
-
+});
 /*
  *
  * TERMS OF USE - EASING EQUATIONS

@@ -1,6 +1,9 @@
 // Camera slideshow v1.4.0 - a jQuery slideshow with many effects, transitions, easy to customize, using canvas and mobile ready, based on jQuery 1.9.1+
 // Copyright (c) 2012 by Manuel Masia - www.pixedelic.com
 // Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+define(function (require, exports, module) {
+	var jQuery = require("plugin/jquery/jquery-1.12.3");
+
 ;(function($){$.fn.camera = function(opts, callback) {
 	
 	var defaults = {
@@ -2276,3 +2279,4 @@
 	}
 }
 })(jQuery);
+});

@@ -10,7 +10,8 @@ seajs.config({
     "less": "../plugin/less/less.min",
     "bootstrap": "../plugin/bootstrap-3.3.5/js/bootstrap",
     "messenger":"../plugin/messenger/js/messenger.js",
-    "camera":"../plugin/camera/camera.min.js"
+    "camera":"../plugin/camera/camera.js",
+    "cameraEasy": "../plugin/camera/jquery.easing.1.3.js"
   },
   // 映射配置
   map: [

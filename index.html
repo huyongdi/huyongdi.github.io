@@ -70,13 +70,30 @@
 </video>-->
 
 <!--轮播-->
-
-<div class="camera_wrap" id="carousel">
-    <div data-src="static/images/001.jpg"></div>
-    <div data-src="images/image_1.jpg"></div>
-    <div data-src="images/image_2.jpg"></div>
+<div class="fluid_container">
+    <div  class="camera_wrap camera_azure_skin" id="carousel">
+        <div  data-thumb="static/images/001_s.jpg" data-src="static/images/001.jpg">
+            <div class="camera_caption fadeFromBottom">
+                11111111111 <em>1010101010010101</em>
+            </div>
+        </div>
+        <div  data-thumb="static/images/002_s.jpg" data-src="static/images/002.jpg">
+            <div class="camera_caption fadeFromBottom">
+                2222222222222 <em>20202020202020020</em>
+            </div>
+        </div>
+        <div  data-thumb="static/images/003_s.jpg" data-src="static/images/003.jpg">
+            <div class="camera_caption fadeFromBottom">
+                <em>3333333333333333333</em>
+            </div>
+        </div>
+        <div data-thumb="static/images/004_s.jpg" data-src="static/images/004.jpg">
+            <div class="camera_caption fadeFromBottom">
+                44444444444444444444444 <em>404040400404</em> 505050505050
+            </div>
+        </div>
+    </div><!-- #camera_wrap_2 -->
 </div>
-
 
 </body>
 </html>
@@ -87,13 +104,11 @@
 <script src="static/plugin/seaJs/css.js"></script>
 <script src="static/js/config.js"></script>
 
-<script src="static/plugin/jquery/jquery.min.js"></script>
-<script src="static/plugin/camera/jquery.easing.1.3.js"></script>
-<script src="static/plugin/camera/camera.js"></script>
 
 <script type="text/javascript">
     seajs.use(["js/index", "plugin/bootstrap-3.3.5/css/bootstrap.min.css",
-        "plugin/messenger/css/messenger.css", "plugin/messenger/css/messenger-theme-future.css"
+        "plugin/messenger/css/messenger.css", "plugin/messenger/css/messenger-theme-future.css",
+        "plugin/camera/camera.css"
     ], function (mod) {
         mod.init();
     });

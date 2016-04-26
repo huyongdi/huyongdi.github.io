@@ -6,8 +6,8 @@ define(function (require, exports, module) {
   var Common = require("common");
   var common = new Common;
   require("messenger");
-//   require("camera");
-
+  require("camera");
+  require("cameraEasy");
 
 
   function init() {
@@ -24,27 +24,33 @@ define(function (require, exports, module) {
   }
 
   function navSearch() {
-    $("#nav_search").off("click").on("click",function () {
+    $("#nav_search").off("click").on("click", function () {
       var name = $("#nav_input").val();
       var flag = false;
-      var person = ["苍井空","小泽玛利亚","波多野结衣"];
-      $.each(person,function (i,item) {
-        if(name == item){
+      var person = ["苍井空", "小泽玛利亚", "波多野结衣"];
+      $.each(person, function (i, item) {
+        if (name == item) {
           flag = true;
         }
       });
-      if(flag){
-        common.confirm("未满十八岁禁止观看",function () {
+      if (flag) {
+        common.confirm("未满十八岁禁止观看", function () {
           common.alertInfo("正在加载，请等待~")
         })
       }
     });
   }
-  
+
   function carouselInit() {
-    $('#carousel').camera();
+    $('#carousel').camera({
+      height: '400px',
+      loader: 'bar',
+      pagination: false,
+      thumbnails: true
+    });
+
   }
-  
+
   module.exports = {
     "init": init
   };
