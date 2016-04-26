@@ -5,7 +5,12 @@
 }
 
 .fluid_container {
+   margin: 0 auto;
+   max-width: 1000px;
+   width: 90%;
+ }
+
+.fluid_container01 {
   margin: 0 auto;
-  max-width: 1000px;
-  width: 90%;
+  width: 680px;
 }

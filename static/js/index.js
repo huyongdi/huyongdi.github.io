@@ -43,7 +43,7 @@ define(function (require, exports, module) {
 
   function carouselInit() {
     $('#carousel').camera({
-      height: '400px',
+      height: '700px',
       loader: 'bar', //bar是下面出现加载条，pie是右上角出现圈圈
       pagination: false,
       thumbnails: true,

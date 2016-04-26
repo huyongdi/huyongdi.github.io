@@ -29,9 +29,9 @@
                 <li><a href="#">A</a></li>
                 <li><a href="#">B</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">目前可用分类 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
+                        <li><a href="static/html/media.html">视频</a></li>
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
@@ -64,32 +64,31 @@
     </div>
 </nav>
 
-<!--轮播-->
-<div class="fluid_container">
-    <div  class="camera_wrap camera_azure_skin" id="carousel">
-        <div  data-thumb="static/images/001_s.jpg" data-src="static/images/005.jpg">
-            <div class="camera_caption fadeFromBottom">
-                特色团日 <em>第一次活动</em>
+    <!--轮播-->
+    <div class="fluid_container">
+        <div class="camera_wrap camera_azure_skin" id="carousel">
+            <div data-thumb="static/images/011_s.jpg" data-src="static/images/011.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    特色团日 <em>第一次活动</em>
+                </div>
             </div>
-        </div>
-        <div  data-thumb="static/images/002_s.jpg" data-src="static/images/006.jpg">
-            <div class="camera_caption fadeFromBottom">
-                党的号召 <em>666</em>
+            <div data-thumb="static/images/012_s.jpg" data-src="static/images/012.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    党的号召 <em>666</em>
+                </div>
             </div>
-        </div>
-        <div  data-thumb="static/images/003_s.jpg" data-src="static/images/003.jpg">
-            <div class="camera_caption fadeFromBottom">
-                <em>3333333333333333333</em>
+            <div data-thumb="static/images/016_s.jpg" data-src="static/images/016.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    <em>3333333333333333333</em>
+                </div>
             </div>
-        </div>
-        <div data-thumb="static/images/004_s.jpg" data-src="static/images/004.jpg">
-            <div class="camera_caption fadeFromBottom">
-                44444444444444444444444 <em>404040400404</em> 505050505050
+            <div data-thumb="static/images/005_s.jpg" data-src="static/images/005.jpg">
+                <div class="camera_caption fadeFromBottom">
+                    44444444444444444444444 <em>404040400404</em> 505050505050
+                </div>
             </div>
         </div>
     </div>
-</div>
-
 
 
 </body>
@@ -105,7 +104,7 @@
 <script type="text/javascript">
     seajs.use(["js/index", "plugin/bootstrap-3.3.5/css/bootstrap.min.css",
         "plugin/messenger/css/messenger.css", "plugin/messenger/css/messenger-theme-future.css",
-        "plugin/camera/camera.css","style/main.css"
+        "plugin/camera/camera.css", "style/main.css"
     ], function (mod) {
         mod.init();
     });
