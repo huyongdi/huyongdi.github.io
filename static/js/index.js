@@ -44,9 +44,10 @@ define(function (require, exports, module) {
   function carouselInit() {
     $('#carousel').camera({
       height: '400px',
-      loader: 'bar',
+      loader: 'bar', //bar是下面出现加载条，pie是右上角出现圈圈
       pagination: false,
-      thumbnails: true
+      thumbnails: true,
+      time:3000
     });
 
   }
