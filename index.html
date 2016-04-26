@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--为了确保适当的绘制和触屏缩放-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>hyd_test</title>
-    <link rel="stylesheet/less" href="static/style/main.less">
+    <!--<link rel="stylesheet/less" href="static/style/main.less">-->
 </head>
 <body>
 
@@ -67,14 +67,14 @@
 <!--轮播-->
 <div class="fluid_container">
     <div  class="camera_wrap camera_azure_skin" id="carousel">
-        <div  data-thumb="static/images/001_s.jpg" data-src="static/images/001.jpg">
+        <div  data-thumb="static/images/001_s.jpg" data-src="static/images/005.jpg">
             <div class="camera_caption fadeFromBottom">
-                11111111111 <em>1010101010010101</em>
+                特色团日 <em>第一次活动</em>
             </div>
         </div>
-        <div  data-thumb="static/images/002_s.jpg" data-src="static/images/002.jpg">
+        <div  data-thumb="static/images/002_s.jpg" data-src="static/images/006.jpg">
             <div class="camera_caption fadeFromBottom">
-                2222222222222 <em>20202020202020020</em>
+                党的号召 <em>666</em>
             </div>
         </div>
         <div  data-thumb="static/images/003_s.jpg" data-src="static/images/003.jpg">
@@ -90,6 +90,8 @@
     </div>
 </div>
 
+
+
 </body>
 </html>
 
@@ -103,7 +105,7 @@
 <script type="text/javascript">
     seajs.use(["js/index", "plugin/bootstrap-3.3.5/css/bootstrap.min.css",
         "plugin/messenger/css/messenger.css", "plugin/messenger/css/messenger-theme-future.css",
-        "plugin/camera/camera.css"
+        "plugin/camera/camera.css","style/main.css"
     ], function (mod) {
         mod.init();
     });
