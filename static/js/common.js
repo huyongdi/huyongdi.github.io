@@ -71,7 +71,7 @@ define(function (require, exports, module) {
 
       var link = url.substring(index + 1, lastIndex); //opt_value：事件的一些数值信息，比如权重、时长、价格等等，在报表中可以看到其平均值等数据。该项可选。
       window._hmt && window._hmt.push(['_trackEvent', label, 'click', title, link]);
-      window._gaq && window._gaq.push(['_trackEvent', label, 'click', title, link]);
+      window._gaq && window._gaq.push(['_trackEvent', label]);
     };
   }
 
