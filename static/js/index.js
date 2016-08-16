@@ -25,6 +25,7 @@ define(function (require, exports, module) {
 
   function navSearch() {
     $("#nav_search").off("click").on("click", function () {
+      common.eventTrace("导航栏-搜索按钮");
       var name = $("#nav_input").val();
       var flag = false;
       var person = ["苍井空", "小泽玛利亚", "波多野结衣"];

@@ -2,29 +2,6 @@ define(function (require, exports, module) {
   var $ = require("jquery");
 
   function Common() {
-
-    /**
-     * 当列表内字过长会自动隐藏，鼠标放上去展开
-     */
-    this.bindTdWordWrapToggle = function () {
-      $(".nowrap").bind("mouseover", function () {
-        $(this).removeClass("nowrap");
-        $(this).addClass("word-wrap");
-      });
-      $(".nowrap").bind("mouseout", function () {
-        $(this).removeClass("word-wrap");
-        $(this).addClass("nowrap");
-      });
-      $(".word-wrap").bind("mouseover", function () {
-        $(this).removeClass("nowrap");
-        $(this).addClass("word-wrap");
-      });
-      $(".word-wrap").bind("mouseout", function () {
-        $(this).removeClass("word-wrap");
-        $(this).addClass("nowrap");
-      });
-    };
-    
     /**
      * 弹出确认框，显示用户传入的提示信息
      * @param message  提示信息
@@ -82,6 +59,19 @@ define(function (require, exports, module) {
       });
     };
 
+    /**
+     * 百度统计-事件追踪
+     * bc代表百度
+     */
+    this.eventTrace = function (label) {
+      var title = document.title; //opt_label 事件的一些额外信息，通常可以是歌曲的名称、软件的名称、链接的名称等等。该项可选。
+      var url = window.location.href;
+      var index = url.lastIndexOf("/");
+      var lastIndex = url.indexOf("?");
+
+      var link = url.substring(index + 1, lastIndex); //opt_value：事件的一些数值信息，比如权重、时长、价格等等，在报表中可以看到其平均值等数据。该项可选。
+      window._hmt && window._hmt.push(['_trackEvent', label, 'click', title, link]);
+    };
   }
 
 
