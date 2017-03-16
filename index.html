@@ -166,6 +166,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Vue.js的几点细节" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/16/Vue.js的几点细节/">Vue.js的几点细节</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/16/Vue.js的几点细节/" class="archive-article-date">
+  	<time datetime="2017-03-16T07:27:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>记录几个细节问题</p>
+<h4 id="1-在vue实例里面获得input的值"><a href="#1-在vue实例里面获得input的值" class="headerlink" title="1.在vue实例里面获得input的值"></a>1.在vue实例里面获得input的值</h4><p>HTML:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"searchBorder"</span> id=<span class="string">"search_gene"</span>&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> class=<span class="string">"form-control"</span> @keyup.enter=<span class="string">"onEnter"</span> ref=<span class="string">"searchInput"</span>&gt; &lt;!--ref值--&gt;</div><div class="line">     &lt;button class=<span class="string">"search-btn myBtn"</span> @click=<span class="string">"onEnter"</span>&gt;&lt;/button&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>JS:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">new Vue(&#123;</div><div class="line">   el: <span class="string">'#search_gene'</span>,</div><div class="line">   data: &#123;</div><div class="line">            searchInput: null</div><div class="line">         &#125;,</div><div class="line">   methods: &#123;</div><div class="line">            onEnter: <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">                var value =this.<span class="variable">$refs</span>.searchInput.value; //取得实例对应ref的值</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2017/03/16/Vue.js的几点细节/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-vue实现简单的分页功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -526,19 +588,19 @@
 
 
   
-    <article id="post-vue-js响应式问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Vue.js响应式问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/19/vue-js响应式问题/">vue.js响应式问题</a>
+      <a class="article-title" href="/2017/01/19/Vue.js响应式问题/">vue.js响应式问题</a>
     </h1>
   
 
         
-        <a href="/2017/01/19/vue-js响应式问题/" class="archive-article-date">
+        <a href="/2017/01/19/Vue.js响应式问题/" class="archive-article-date">
   	<time datetime="2017-01-19T00:49:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-19</time>
 </a>
         
@@ -550,7 +612,7 @@
 <p>一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新</p>
 <p>有２个问题需要注意：(ViewModel)</p>
 <p>１.　视图，也就是html里面，可以先判断数据是否存在，防止报错<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;span v-if=<span class="string">"subPanel.diseaseData"</span>&gt;&#123;&#123;subPanel.diseaseData.parent&#125;&#125;&lt;/span&gt;</div></pre></td></tr></table></figure></p>
-<p>２.  管理数据，也就是JS里面，实现响应式，不仅data里面外接视图的变量需要声明，如果想实现改变变量里面某个属性，导致视图更新，<br>     需要提前具体的声明这个属性。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.each(subPanelLIst, <span class="keyword">function</span> (i, value) &#123; //确保申明变量，才能实现双向绑定</div><div class="line">       value.diseaseData = []</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>这一点补充记录一下，是错的，具体情况比较复杂，简单的说不应该在一个实例里面套用另一个实例（3.16）<br>２.  管理数据，也就是JS里面，实现响应式，不仅data里面外接视图的变量需要声明，如果想实现改变变量里面某个属性，导致视图更新，<br>     需要提前具体的声明这个属性。 （错误总结，暂且不删）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.each(subPanelLIst, <span class="keyword">function</span> (i, value) &#123; //确保申明变量，才能实现双向绑定</div><div class="line">       value.diseaseData = []</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 
       
 
@@ -685,66 +747,6 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-迎接2017" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/03/迎接2017/">迎接2017</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/03/迎接2017/" class="archive-article-date">
-  	<time datetime="2017-01-03T02:07:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="先说说去年："><a href="#先说说去年：" class="headerlink" title="先说说去年："></a>先说说去年：</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;工作方面，算是正式以菜鸟的身份进入前端行业。<br>&nbsp;&nbsp;&nbsp;&nbsp;生活方面，最近搬家了，勉强算是改善了环境，至少我想要的单独热水器暖灯卫生间+阳台有了，也不知道什么时候能有自己的房，这个话题就不说了。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;然后，这一年还给自己添置了新电脑+电信100M，美名其曰~程序员需要高配置，实际上是打游戏还是看小电影就自己知道就好（滑稽脸）。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;总体来说，这一年不好也不坏，工资勉强够用，生活平平谈谈。<br>
-        
-          <a class="article-more-a" href="/2017/01/03/迎接2017/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
         		</li>
       		
 		</ul>

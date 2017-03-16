@@ -6,27 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="huyongdi.com">
-  <title>vue.js响应式问题 | sunshine</title>
+  <title>Archives: 2017 | sunshine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先批评一下自己，都学了快一个月的vue.js，连响应式双向绑定都没完全理解。直到昨天晚上加班　　＝．＝
-一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新
-有２个问题需要注意：(ViewModel)
-１.　视图，也就是html里面，可以先判断数据是否存在，防止报错1&amp;lt;span v-if=&quot;subPanel.diseaseData&quot;&amp;gt;&amp;#123;&amp;#123">
-<meta property="og:type" content="article">
-<meta property="og:title" content="vue.js响应式问题">
-<meta property="og:url" content="huyongdi.com/2017/01/19/vue-js响应式问题/index.html">
+  <meta name="description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
+<meta property="og:type" content="website">
+<meta property="og:title" content="sunshine">
+<meta property="og:url" content="huyongdi.com/archives/2017/page/2/index.html">
 <meta property="og:site_name" content="sunshine">
-<meta property="og:description" content="首先批评一下自己，都学了快一个月的vue.js，连响应式双向绑定都没完全理解。直到昨天晚上加班　　＝．＝
-一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新
-有２个问题需要注意：(ViewModel)
-１.　视图，也就是html里面，可以先判断数据是否存在，防止报错1&amp;lt;span v-if=&quot;subPanel.diseaseData&quot;&amp;gt;&amp;#123;&amp;#123">
-<meta property="og:updated_time" content="2017-01-19T01:37:51.086Z">
+<meta property="og:description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue.js响应式问题">
-<meta name="twitter:description" content="首先批评一下自己，都学了快一个月的vue.js，连响应式双向绑定都没完全理解。直到昨天晚上加班　　＝．＝
-一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新
-有２个问题需要注意：(ViewModel)
-１.　视图，也就是html里面，可以先判断数据是否存在，防止报错1&amp;lt;span v-if=&quot;subPanel.diseaseData&quot;&amp;gt;&amp;#123;&amp;#123">
+<meta name="twitter:title" content="sunshine">
+<meta name="twitter:description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
   
     <link rel="alternative" href="/atom.xml" title="sunshine" type="application/atom+xml">
   
@@ -174,159 +164,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue-js响应式问题" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      vue.js响应式问题
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/01/03/迎接2017/" class="archive-article-date">
+  	<time datetime="2017-01-03T02:07:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-03</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/01/03/迎接2017/">迎接2017</a>
     </h1>
   
 
-        
-        <a href="/2017/01/19/vue-js响应式问题/" class="archive-article-date">
-  	<time datetime="2017-01-19T00:49:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先批评一下自己，都学了快一个月的vue.js，连响应式双向绑定都没完全理解。<br>直到昨天晚上加班　　＝．＝</p>
-<p>一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新</p>
-<p>有２个问题需要注意：(ViewModel)</p>
-<p>１.　视图，也就是html里面，可以先判断数据是否存在，防止报错<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;span v-if=<span class="string">"subPanel.diseaseData"</span>&gt;&#123;&#123;subPanel.diseaseData.parent&#125;&#125;&lt;/span&gt;</div></pre></td></tr></table></figure></p>
-<p>２.  管理数据，也就是JS里面，实现响应式，不仅data里面外接视图的变量需要声明，如果想实现改变变量里面某个属性，导致视图更新，<br>     需要提前具体的声明这个属性。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.each(subPanelLIst, <span class="keyword">function</span> (i, value) &#123; //确保申明变量，才能实现双向绑定</div><div class="line">       value.diseaseData = []</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+        <div class="article-info info-on-right">
+          
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http:huyongdi.com/2017/01/19/vue-js响应式问题/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2017/01/20/简单的滚轮放大图片/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          简单的滚轮放大图片
-        
-      </div>
-    </a>
   
   
-    <a href="/2017/01/17/微信服务号红包/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">微信服务号红包</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="vue-js响应式问题" data-title="vue.js响应式问题" data-url="huyongdi.com/2017/01/19/vue-js响应式问题/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"huyongdi"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
+    </div></section>
   
 
-
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2017/">&laquo; Prev</a><a class="page-number" href="/archives/2017/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -349,8 +244,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

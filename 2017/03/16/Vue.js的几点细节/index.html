@@ -6,24 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="huyongdi.com">
-  <title>简单的滚轮放大图片 | sunshine</title>
+  <title>Vue.js的几点细节 | sunshine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录一下，鼠标放在图片上面，以图片的左上角为(0,0)简单的放大图片
-绑定函数onmousewheel 函数也可以通过js动态添加1&amp;lt;img src=&quot;../img/abc.png&quot; onmousewheel=&quot;return bigImg(this)&quot;&amp;gt;
-函数体12345678&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;    function bigIm">
+  <meta name="description" content="记录几个细节问题
+1.在vue实例里面获得input的值HTML:1234&amp;lt;div class=&quot;searchBorder&quot; id=&quot;search_gene&quot;&amp;gt;     &amp;lt;input type=&quot;text&quot; class=&quot;form-control&quot; @keyup.enter=&quot;onEnter&quot; ref=&quot;searchInput&quot;&amp;gt; &amp;lt;!--ref值--&amp;gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单的滚轮放大图片">
-<meta property="og:url" content="huyongdi.com/2017/01/20/简单的滚轮放大图片/index.html">
+<meta property="og:title" content="Vue.js的几点细节">
+<meta property="og:url" content="huyongdi.com/2017/03/16/Vue.js的几点细节/index.html">
 <meta property="og:site_name" content="sunshine">
-<meta property="og:description" content="记录一下，鼠标放在图片上面，以图片的左上角为(0,0)简单的放大图片
-绑定函数onmousewheel 函数也可以通过js动态添加1&amp;lt;img src=&quot;../img/abc.png&quot; onmousewheel=&quot;return bigImg(this)&quot;&amp;gt;
-函数体12345678&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;    function bigIm">
-<meta property="og:updated_time" content="2017-01-20T09:02:22.489Z">
+<meta property="og:description" content="记录几个细节问题
+1.在vue实例里面获得input的值HTML:1234&amp;lt;div class=&quot;searchBorder&quot; id=&quot;search_gene&quot;&amp;gt;     &amp;lt;input type=&quot;text&quot; class=&quot;form-control&quot; @keyup.enter=&quot;onEnter&quot; ref=&quot;searchInput&quot;&amp;gt; &amp;lt;!--ref值--&amp;gt;">
+<meta property="og:updated_time" content="2017-03-16T07:56:28.642Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="简单的滚轮放大图片">
-<meta name="twitter:description" content="记录一下，鼠标放在图片上面，以图片的左上角为(0,0)简单的放大图片
-绑定函数onmousewheel 函数也可以通过js动态添加1&amp;lt;img src=&quot;../img/abc.png&quot; onmousewheel=&quot;return bigImg(this)&quot;&amp;gt;
-函数体12345678&amp;lt;script type=&quot;text/javascript&quot;&amp;gt;    function bigIm">
+<meta name="twitter:title" content="Vue.js的几点细节">
+<meta name="twitter:description" content="记录几个细节问题
+1.在vue实例里面获得input的值HTML:1234&amp;lt;div class=&quot;searchBorder&quot; id=&quot;search_gene&quot;&amp;gt;     &amp;lt;input type=&quot;text&quot; class=&quot;form-control&quot; @keyup.enter=&quot;onEnter&quot; ref=&quot;searchInput&quot;&amp;gt; &amp;lt;!--ref值--&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="sunshine" type="application/atom+xml">
   
@@ -171,29 +168,34 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-简单的滚轮放大图片" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Vue.js的几点细节" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      简单的滚轮放大图片
+      Vue.js的几点细节
     </h1>
   
 
         
-        <a href="/2017/01/20/简单的滚轮放大图片/" class="archive-article-date">
-  	<time datetime="2017-01-20T08:56:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-20</time>
+        <a href="/2017/03/16/Vue.js的几点细节/" class="archive-article-date">
+  	<time datetime="2017-03-16T07:27:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>记录一下，鼠标放在图片上面，以图片的左上角为(0,0)简单的放大图片</p>
-<h4 id="绑定函数"><a href="#绑定函数" class="headerlink" title="绑定函数"></a>绑定函数</h4><p>onmousewheel 函数也可以通过js动态添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"../img/abc.png"</span> onmousewheel=<span class="string">"return bigImg(this)"</span>&gt;</div></pre></td></tr></table></figure></p>
-<h4 id="函数体"><a href="#函数体" class="headerlink" title="函数体"></a>函数体</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">    <span class="keyword">function</span> bigImg(o) &#123;</div><div class="line">        var zoom = parseInt(o.style.zoom, 10) || 100;</div><div class="line">        zoom += event.wheelDelta / 12;</div><div class="line">        <span class="keyword">if</span> (zoom &gt; 0) o.style.zoom = zoom + <span class="string">'%'</span>;</div><div class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+        <p>记录几个细节问题</p>
+<h4 id="1-在vue实例里面获得input的值"><a href="#1-在vue实例里面获得input的值" class="headerlink" title="1.在vue实例里面获得input的值"></a>1.在vue实例里面获得input的值</h4><p>HTML:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"searchBorder"</span> id=<span class="string">"search_gene"</span>&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> class=<span class="string">"form-control"</span> @keyup.enter=<span class="string">"onEnter"</span> ref=<span class="string">"searchInput"</span>&gt; &lt;!--ref值--&gt;</div><div class="line">     &lt;button class=<span class="string">"search-btn myBtn"</span> @click=<span class="string">"onEnter"</span>&gt;&lt;/button&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>JS:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">new Vue(&#123;</div><div class="line">   el: <span class="string">'#search_gene'</span>,</div><div class="line">   data: &#123;</div><div class="line">            searchInput: null</div><div class="line">         &#125;,</div><div class="line">   methods: &#123;</div><div class="line">            onEnter: <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">                var value =this.<span class="variable">$refs</span>.searchInput.value; //取得实例对应ref的值</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h4 id="2。html模板里面遍历数组时，利用上index"><a href="#2。html模板里面遍历数组时，利用上index" class="headerlink" title="2。html模板里面遍历数组时，利用上index"></a>2。html模板里面遍历数组时，利用上index</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">:id=<span class="string">"'abc'+index"</span> //动态绑定ID</div></pre></td></tr></table></figure>
+<h4 id="3-不要修改后台原值，应该尽量使用过滤器filters"><a href="#3-不要修改后台原值，应该尽量使用过滤器filters" class="headerlink" title="3.不要修改后台原值，应该尽量使用过滤器filters"></a>3.不要修改后台原值，应该尽量使用过滤器filters</h4><p>HTML:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;!-- <span class="keyword">in</span> mustaches --&gt;</div><div class="line">&#123;&#123; message | capitalize &#125;&#125;</div><div class="line">&lt;!-- <span class="keyword">in</span> v-bind --&gt;</div><div class="line">&lt;div v-bind:id=<span class="string">"rawId | formatId"</span>&gt;&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+<p>JS:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">new Vue(&#123;</div><div class="line">  // ...</div><div class="line">  filters: &#123;</div><div class="line">    capitalize: <span class="keyword">function</span> (value) &#123;</div><div class="line">      <span class="keyword">if</span> (!value) <span class="built_in">return</span> <span class="string">''</span></div><div class="line">      value = value.toString()</div><div class="line">      <span class="built_in">return</span> value.charAt(0).toUpperCase() + value.slice(1)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+
       
 
       
@@ -262,7 +264,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http:huyongdi.com/2017/01/20/简单的滚轮放大图片/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:huyongdi.com/2017/03/16/Vue.js的几点细节/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -276,18 +278,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/01/22/相册分类简单自定义实现/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          相册分类简单自定义实现
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/01/19/Vue.js响应式问题/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">vue.js响应式问题</div>
+    <a href="/2017/03/08/vue实现简单的分页功能/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">vue实现简单的分页功能</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -301,7 +294,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="简单的滚轮放大图片" data-title="简单的滚轮放大图片" data-url="huyongdi.com/2017/01/20/简单的滚轮放大图片/"></div>
+	<div class="ds-thread" data-thread-key="Vue.js的几点细节" data-title="Vue.js的几点细节" data-url="huyongdi.com/2017/03/16/Vue.js的几点细节/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
