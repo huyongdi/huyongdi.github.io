@@ -166,6 +166,67 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-记录几个问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/30/记录几个问题/">记录几个问题</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/30/记录几个问题/" class="archive-article-date">
+  	<time datetime="2017-03-30T08:56:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近真是忙的要死，一不小心就晚上十二点了，记录一些东西吧，免得忘了</p>
+<h3 id="1-数组值是对象，根据对象的某个属性进行排序"><a href="#1-数组值是对象，根据对象的某个属性进行排序" class="headerlink" title="1. 数组值是对象，根据对象的某个属性进行排序"></a>1. 数组值是对象，根据对象的某个属性进行排序</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> compare (property) &#123;</div><div class="line">        <span class="built_in">return</span> <span class="keyword">function</span> (a, b) &#123;</div><div class="line">                                var value1 = a[property];</div><div class="line">                                var value2 = b[property];</div><div class="line">                                <span class="built_in">return</span> value1 - value2;</div><div class="line">                                &#125;</div><div class="line">                           &#125;,</div><div class="line">arr.sort(compare(<span class="string">'id'</span>)); //排序</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/03/30/记录几个问题/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-ajax几点问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -670,66 +731,6 @@
 <p>１.　视图，也就是html里面，可以先判断数据是否存在，防止报错<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;span v-if=<span class="string">"subPanel.diseaseData"</span>&gt;&#123;&#123;subPanel.diseaseData.parent&#125;&#125;&lt;/span&gt;</div></pre></td></tr></table></figure></p>
 <p>这一点补充记录一下，是错的，具体情况比较复杂，简单的说不应该在一个实例里面套用另一个实例（3.16）<br>２.  管理数据，也就是JS里面，实现响应式，不仅data里面外接视图的变量需要声明，如果想实现改变变量里面某个属性，导致视图更新，<br>     需要提前具体的声明这个属性。 （错误总结，暂且不删）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.each(subPanelLIst, <span class="keyword">function</span> (i, value) &#123; //确保申明变量，才能实现双向绑定</div><div class="line">       value.diseaseData = []</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-微信服务号红包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/17/微信服务号红包/">微信服务号红包</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/17/微信服务号红包/" class="archive-article-date">
-  	<time datetime="2017-01-17T00:32:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-先获取到-AppSecret-应用密钥"><a href="#1-先获取到-AppSecret-应用密钥" class="headerlink" title="1.先获取到 AppSecret(应用密钥)"></a>1.先获取到 AppSecret(应用密钥)</h3><p>登录公众号之后，左侧导航最下面—开发—基本配置。如果没有显示<strong>生成</strong>，如果有会显示<strong>重置</strong><br><img src="http://7xt475.com1.z0.glb.clouddn.com/1.png" alt="左侧导航配图"> <img src="http://7xt475.com1.z0.glb.clouddn.com/11.png" alt="基本配置配图"></p>
-        
-          <a class="article-more-a" href="/2017/01/17/微信服务号红包/#more">more >></a>
-        
       
 
       
