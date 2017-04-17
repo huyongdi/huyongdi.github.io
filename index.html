@@ -167,6 +167,66 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-滚动条滚到到特定位置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/04/17/滚动条滚到到特定位置/">滚动条滚到到特定位置</a>
+    </h1>
+  
+
+        
+        <a href="/2017/04/17/滚动条滚到到特定位置/" class="archive-article-date">
+  	<time datetime="2017-04-17T01:01:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-锚点"><a href="#1-锚点" class="headerlink" title="1.锚点"></a>1.锚点</h3><h3 id="2-改变scrollTop"><a href="#2-改变scrollTop" class="headerlink" title="2. 改变scrollTop"></a>2. 改变scrollTop</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//有时候会被影响并不能滚动 </div><div class="line">$(<span class="string">'html, body'</span>).animate(&#123;</div><div class="line">       scrollTop: $(<span class="string">"#id"</span>).offset().top</div><div class="line">&#125;, 2000);</div></pre></td></tr></table></figure>
+<h3 id="3-直接改变hash"><a href="#3-直接改变hash" class="headerlink" title="3.直接改变hash"></a>3.直接改变hash</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">window.location.hash = <span class="string">"#id"</span></div></pre></td></tr></table></figure>
+<h3 id="4-scrollIntoView让元素出现在顶部"><a href="#4-scrollIntoView让元素出现在顶部" class="headerlink" title="4.scrollIntoView让元素出现在顶部"></a>4.scrollIntoView让元素出现在顶部</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(<span class="string">'tool'</span>).scrollIntoView(<span class="literal">true</span>);</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-记录几个问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -678,69 +738,6 @@
         <p>记录一下，鼠标放在图片上面，以图片的左上角为(0,0)简单的放大图片</p>
 <h4 id="绑定函数"><a href="#绑定函数" class="headerlink" title="绑定函数"></a>绑定函数</h4><p>onmousewheel 函数也可以通过js动态添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"../img/abc.png"</span> onmousewheel=<span class="string">"return bigImg(this)"</span>&gt;</div></pre></td></tr></table></figure></p>
 <h4 id="函数体"><a href="#函数体" class="headerlink" title="函数体"></a>函数体</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">    <span class="keyword">function</span> bigImg(o) &#123;</div><div class="line">        var zoom = parseInt(o.style.zoom, 10) || 100;</div><div class="line">        zoom += event.wheelDelta / 12;</div><div class="line">        <span class="keyword">if</span> (zoom &gt; 0) o.style.zoom = zoom + <span class="string">'%'</span>;</div><div class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-Vue.js响应式问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/19/Vue.js响应式问题/">vue.js响应式问题</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/19/Vue.js响应式问题/" class="archive-article-date">
-  	<time datetime="2017-01-19T00:49:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先批评一下自己，都学了快一个月的vue.js，连响应式双向绑定都没完全理解。<br>直到昨天晚上加班　　＝．＝</p>
-<p>一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新</p>
-<p>有２个问题需要注意：(ViewModel)</p>
-<p>１.　视图，也就是html里面，可以先判断数据是否存在，防止报错<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;span v-if=<span class="string">"subPanel.diseaseData"</span>&gt;&#123;&#123;subPanel.diseaseData.parent&#125;&#125;&lt;/span&gt;</div></pre></td></tr></table></figure></p>
-<p>这一点补充记录一下，是错的，具体情况比较复杂，简单的说不应该在一个实例里面套用另一个实例（3.16）<br>２.  管理数据，也就是JS里面，实现响应式，不仅data里面外接视图的变量需要声明，如果想实现改变变量里面某个属性，导致视图更新，<br>     需要提前具体的声明这个属性。 （错误总结，暂且不删）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.each(subPanelLIst, <span class="keyword">function</span> (i, value) &#123; //确保申明变量，才能实现双向绑定</div><div class="line">       value.diseaseData = []</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-
       
 
       
