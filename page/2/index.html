@@ -167,6 +167,66 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-简单的滚轮放大图片" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/20/简单的滚轮放大图片/">简单的滚轮放大图片</a>
+    </h1>
+  
+
+        
+        <a href="/2017/01/20/简单的滚轮放大图片/" class="archive-article-date">
+  	<time datetime="2017-01-20T08:56:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>记录一下，鼠标放在图片上面，以图片的左上角为(0,0)简单的放大图片</p>
+<h4 id="绑定函数"><a href="#绑定函数" class="headerlink" title="绑定函数"></a>绑定函数</h4><p>onmousewheel 函数也可以通过js动态添加<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;img src=<span class="string">"../img/abc.png"</span> onmousewheel=<span class="string">"return bigImg(this)"</span>&gt;</div></pre></td></tr></table></figure></p>
+<h4 id="函数体"><a href="#函数体" class="headerlink" title="函数体"></a>函数体</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">    <span class="keyword">function</span> bigImg(o) &#123;</div><div class="line">        var zoom = parseInt(o.style.zoom, 10) || 100;</div><div class="line">        zoom += event.wheelDelta / 12;</div><div class="line">        <span class="keyword">if</span> (zoom &gt; 0) o.style.zoom = zoom + <span class="string">'%'</span>;</div><div class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Vue.js响应式问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
