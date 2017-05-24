@@ -7,19 +7,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="huyongdi.com">
   <link rel="shortcut icon" href="http://ofqtnubd0.bkt.clouddn.com/fire.png" type="image/x-icon">
-  <title>hexo+coding+域名 | sunshine</title>
+  <title>vue组件通信 | sunshine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="由于国内站点访问github太慢，记录一下设置blog到coding hexo命令以及依赖软件/设置就不写了（上一篇已经提到过） 1.修改blog工程文件根目录下的_config.yml文件：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;修改deploy下的resp路径即可 123456deploy:  type: git  repository:      #github: git@githu">
+  <meta name="description" content="利用vue-cli初始化vue+webpack项目之后，想着把共用模块提取出来，比如自己写的页码组件，或者是其它公用模块，遇到了通信问题，记录一下。 1.click特殊情况下用mousedown替代input框获得焦点时，显示一个内容。想隐藏时候： ①.点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。②.将内容部分click替换成mousedown，in">
 <meta name="keywords">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+coding+域名">
-<meta property="og:url" content="huyongdi.com/2016/10/28/hexo-coding-域名/index.html">
+<meta property="og:title" content="vue组件通信">
+<meta property="og:url" content="huyongdi.com/2017/05/24/vue组件通信/index.html">
 <meta property="og:site_name" content="sunshine">
-<meta property="og:description" content="由于国内站点访问github太慢，记录一下设置blog到coding hexo命令以及依赖软件/设置就不写了（上一篇已经提到过） 1.修改blog工程文件根目录下的_config.yml文件：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;修改deploy下的resp路径即可 123456deploy:  type: git  repository:      #github: git@githu">
-<meta property="og:updated_time" content="2017-01-17T02:54:00.238Z">
+<meta property="og:description" content="利用vue-cli初始化vue+webpack项目之后，想着把共用模块提取出来，比如自己写的页码组件，或者是其它公用模块，遇到了通信问题，记录一下。 1.click特殊情况下用mousedown替代input框获得焦点时，显示一个内容。想隐藏时候： ①.点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。②.将内容部分click替换成mousedown，in">
+<meta property="og:updated_time" content="2017-05-24T06:38:12.501Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo+coding+域名">
-<meta name="twitter:description" content="由于国内站点访问github太慢，记录一下设置blog到coding hexo命令以及依赖软件/设置就不写了（上一篇已经提到过） 1.修改blog工程文件根目录下的_config.yml文件：&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;修改deploy下的resp路径即可 123456deploy:  type: git  repository:      #github: git@githu">
+<meta name="twitter:title" content="vue组件通信">
+<meta name="twitter:description" content="利用vue-cli初始化vue+webpack项目之后，想着把共用模块提取出来，比如自己写的页码组件，或者是其它公用模块，遇到了通信问题，记录一下。 1.click特殊情况下用mousedown替代input框获得焦点时，显示一个内容。想隐藏时候： ①.点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。②.将内容部分click替换成mousedown，in">
   
     <link rel="alternative" href="/atom.xml" title="sunshine" type="application/atom+xml">
   
@@ -167,32 +167,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hexo-coding-域名" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue组件通信" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      hexo+coding+域名
+      vue组件通信
     </h1>
   
 
         
-        <a href="/2016/10/28/hexo-coding-域名/" class="archive-article-date">
-  	<time datetime="2016-10-28T07:53:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-28</time>
+        <a href="/2017/05/24/vue组件通信/" class="archive-article-date">
+  	<time datetime="2017-05-24T02:14:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>由于国内站点访问github太慢，记录一下设置blog到coding</p>
-<p>hexo命令以及依赖软件/设置就不写了（上一篇已经提到过）</p>
-<h3 id="1-修改blog工程文件"><a href="#1-修改blog工程文件" class="headerlink" title="1.修改blog工程文件"></a>1.修改blog工程文件</h3><p>根目录下的_config.yml文件：<br>&nbsp;&nbsp;&nbsp;&nbsp;修改deploy下的resp路径即可</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository:</div><div class="line">      <span class="comment">#github: git@github.com:huyongdi/huyongdi.github.io.git</span></div><div class="line">      coding: git@git.coding.net:hyd_dev/hyd_dev.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<h3 id="2-coding网站的设置"><a href="#2-coding网站的设置" class="headerlink" title="2.coding网站的设置"></a>2.coding网站的设置</h3><p>登录<a href="https://coding.net/" target="_blank" rel="external">https://coding.net/</a>  &nbsp;&nbsp;右侧悬浮头像—个人设置—SSH 公钥—添加自己的git公钥<br>左侧导航—代码—pages服务—添加分支master—添加域名绑定即可。</p>
+        <p>利用vue-cli初始化vue+webpack项目之后，想着把共用模块提取出来，比如自己写的页码组件，或者是其它公用模块，遇到了通信问题，记录一下。</p>
+<h3 id="1-click特殊情况下用mousedown替代"><a href="#1-click特殊情况下用mousedown替代" class="headerlink" title="1.click特殊情况下用mousedown替代"></a>1.click特殊情况下用mousedown替代</h3><p>input框获得焦点时，显示一个内容。想隐藏时候：</p>
+<h5 id="①-点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。"><a href="#①-点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。" class="headerlink" title="①.点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。"></a>①.点击除了input框之外的地方，隐藏内容。然后内容部分点击阻止冒泡，这也是大部分人最常用的。</h5><h5 id="②-将内容部分click替换成mousedown，input框失去焦点就隐藏内容。实现原理：mousedown会优于blur执行，所以点击的时候，不会触发blur导致隐藏"><a href="#②-将内容部分click替换成mousedown，input框失去焦点就隐藏内容。实现原理：mousedown会优于blur执行，所以点击的时候，不会触发blur导致隐藏" class="headerlink" title="②.将内容部分click替换成mousedown，input框失去焦点就隐藏内容。实现原理：mousedown会优于blur执行，所以点击的时候，不会触发blur导致隐藏"></a>②.将内容部分click替换成mousedown，input框失去焦点就隐藏内容。实现原理：mousedown会优于blur执行，所以点击的时候，不会触发blur导致隐藏</h5><h3 id="2-vue子组件和父组件的通信"><a href="#2-vue子组件和父组件的通信" class="headerlink" title="2.vue子组件和父组件的通信"></a>2.vue子组件和父组件的通信</h3><h5 id="①-父组件通过props传值向子组件传值"><a href="#①-父组件通过props传值向子组件传值" class="headerlink" title="①.父组件通过props传值向子组件传值"></a>①.父组件通过props传值向子组件传值</h5><p>prop 是单向绑定的：父组件更新值时，子组件会随着更新，但是反过来不会，并且报错<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">//prop 作为初始值传入后，子组件想把它当作局部数据来用；</div><div class="line">//定义一个局部变量，并用 prop 的值初始化它：</div><div class="line">props: [<span class="string">'initialCounter'</span>],</div><div class="line">data: <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line"><span class="built_in">return</span> &#123; counter: this.initialCounter &#125;</div><div class="line">&#125;</div><div class="line">//prop 作为初始值传入，由子组件处理成其它数据输出。</div><div class="line">//定义一个计算属性，处理 prop 的值并返回。</div><div class="line">props: [<span class="string">'size'</span>],</div><div class="line">computed: &#123;</div><div class="line">  normalizedSize: <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">    <span class="built_in">return</span> this.size.trim().toLowerCase()</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="②-子组件通过-emit传值给父组件"><a href="#②-子组件通过-emit传值给父组件" class="headerlink" title="②.子组件通过$emit传值给父组件"></a>②.子组件通过$emit传值给父组件</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//子组件</div><div class="line">this.<span class="variable">$emit</span>(<span class="string">'onEnter'</span>,this.childValue) //函数名和父元素的@onEnter一致</div><div class="line">//父组件</div><div class="line">&lt;search @onEnter=<span class="string">"onEnter"</span>&gt;&lt;/search&gt;</div><div class="line">onEnter: <span class="keyword">function</span> (data) &#123;&#125; //data就是子组件传过来的childValue</div></pre></td></tr></table></figure>
 
       
 
@@ -202,6 +200,17 @@
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -251,7 +260,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http:huyongdi.com/2016/10/28/hexo-coding-域名/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:huyongdi.com/2017/05/24/vue组件通信/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -265,20 +274,15 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/10/28/简单记录配置hexo/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/21/webpack添加全局jquery/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          配置hexo
+          webpack添加全局jquery以及使用bootstrap
         
       </div>
     </a>
   
-  
-    <a href="/2016/11/04/太阳公公/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">太阳公公</div>
-      <i class="icon-circle-right"></i>
-    </a>
   
 </nav>
 
