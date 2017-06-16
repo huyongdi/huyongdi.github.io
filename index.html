@@ -92,6 +92,8 @@
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hu-yong-di-33" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
+					<a class="qq" target="_blank" href="/354224080" title="qq"><i class="icon-qq"></i></a>
+		        
 			</div>
 		</nav>
 	</header>		
@@ -137,6 +139,8 @@
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hu-yong-di-33" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
+						<a class="qq" target="_blank" href="/354224080" title="qq"><i class="icon-qq"></i></a>
+			        
 				</div>
 			</nav>
 
@@ -166,6 +170,69 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-几个小知识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/06/16/几个小知识/">几个小知识</a>
+    </h1>
+  
+
+        
+        <a href="/2017/06/16/几个小知识/" class="archive-article-date">
+  	<time datetime="2017-06-16T08:27:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-inline-block的影响"><a href="#1-inline-block的影响" class="headerlink" title="1.inline-block的影响"></a>1.inline-block的影响</h3><p>display：inline-block，大小不一会导致上下不齐，有时候需要设置vertical-align属性。</p>
+<h3 id="2-浮动"><a href="#2-浮动" class="headerlink" title="2.浮动"></a>2.浮动</h3><p>父元素加上overflow: hidden  可以去掉子元素浮动影响，当然超过的会被隐藏</p>
+<h3 id="3-合并单元格"><a href="#3-合并单元格" class="headerlink" title="3.合并单元格"></a>3.合并单元格</h3><p>给table加上<br>border-spacing: 0;<br>border-collapse: collapse;</p>
+<h3 id="4-chrome和firefox的区别"><a href="#4-chrome和firefox的区别" class="headerlink" title="4.chrome和firefox的区别"></a>4.chrome和firefox的区别</h3><h5 id="①-重定向链接"><a href="#①-重定向链接" class="headerlink" title="①. 重定向链接"></a>①. 重定向链接</h5><p>chrome上面会自动补全链接 Firefox并不会<br>比如 链接应该为 ‘/sample/capture’ 代码写成了 ‘/sample/capture’，chrome会自动补全’/‘，Firefox会报错301重定向</p>
+<h4 id="②-checked状态的判断"><a href="#②-checked状态的判断" class="headerlink" title="②. checked状态的判断"></a>②. checked状态的判断</h4><p>假如点击input之前checked为false<br>JS判断的时候：<br>chrome会先生效再判断，也就是取值为true<br>Firefox会先判断再生效，也就是取值为falasehexo</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-vue组件通信" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -720,72 +787,9 @@
 
 
   
-    <article id="post-ES6-入门整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/23/ES6-入门整理/">ES6 入门整理</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/23/ES6-入门整理/" class="archive-article-date">
-  	<time datetime="2017-02-23T08:52:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>网上接触到的，把实际项目中感觉可以用上的整理出来，方便查看</p>
-<h4 id="一些风格"><a href="#一些风格" class="headerlink" title="一些风格"></a>一些风格</h4><h5 id="1-对象尽量静态化，一旦定义，就不得随意添加新的属性。如果添加属性不可避免，要使用Object-assign方法。"><a href="#1-对象尽量静态化，一旦定义，就不得随意添加新的属性。如果添加属性不可避免，要使用Object-assign方法。" class="headerlink" title="1.对象尽量静态化，一旦定义，就不得随意添加新的属性。如果添加属性不可避免，要使用Object.assign方法。"></a>1.对象尽量静态化，一旦定义，就不得随意添加新的属性。如果添加属性不可避免，要使用Object.assign方法。</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// bad</div><div class="line">const a = &#123;&#125;;</div><div class="line">a.x = 3;</div><div class="line">// <span class="keyword">if</span> reshape unavoidable</div><div class="line">const a = &#123;&#125;;</div><div class="line">Object.assign(a, &#123; x: 3 &#125;);</div><div class="line">// good</div><div class="line">const a = &#123; x: null &#125;;</div><div class="line">a.x = 3;</div></pre></td></tr></table></figure>
-<h5 id="2-多用箭头函数"><a href="#2-多用箭头函数" class="headerlink" title="2.多用箭头函数"></a>2.多用箭头函数</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">(() =&gt; &#123;  //立即执行函数</div><div class="line">  console.log(<span class="string">'Welcome to the Internet.'</span>);</div><div class="line">&#125;)();</div><div class="line"></div><div class="line">[1, 2, 3].map(x =&gt; x * x);</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2017/02/23/ES6-入门整理/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
 
