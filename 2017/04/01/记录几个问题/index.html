@@ -10,12 +10,13 @@
   <title>记录几个问题 | sunshine</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="最近真是忙的要死，一不小心就晚上十二点了，记录一些东西吧，免得忘了 1. 数组值是对象，根据对象的某个属性进行排序12345678function compare (property) &amp;#123;        return function (a, b) &amp;#123;                                var value1 = a[property];">
-<meta name="keywords">
+<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,编程,代码,开源, IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验 webpack 配置  jquery bootstrap ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记录几个问题">
 <meta property="og:url" content="huyongdi.com/2017/04/01/记录几个问题/index.html">
 <meta property="og:site_name" content="sunshine">
 <meta property="og:description" content="最近真是忙的要死，一不小心就晚上十二点了，记录一些东西吧，免得忘了 1. 数组值是对象，根据对象的某个属性进行排序12345678function compare (property) &amp;#123;        return function (a, b) &amp;#123;                                var value1 = a[property];">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2017-04-01T06:59:30.277Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录几个问题">
@@ -194,7 +195,7 @@
 <h5 id="2-加头部"><a href="#2-加头部" class="headerlink" title="2.加头部"></a>2.加头部</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;meta http-equiv=<span class="string">"Content-Type"</span> content=<span class="string">"text/html; charset=utf-8"</span>/&gt;</div><div class="line">&lt;meta http-equiv=<span class="string">"X-UA-Compatible"</span> content=<span class="string">"IE=edge,chrome=1"</span>/&gt; 默认IE最高版本  有谷歌插件的时候用插件(谷歌内嵌浏览器框架GCF)</div><div class="line">&lt;link href=<span class="string">"img/grandomics.ico"</span> <span class="built_in">type</span>=<span class="string">"image/x-icon"</span> rel=icon&gt;</div></pre></td></tr></table></figure>
 <h5 id="3-图片质量必须高，不然显示不出来（比如QQ截图就基本上不行）"><a href="#3-图片质量必须高，不然显示不出来（比如QQ截图就基本上不行）" class="headerlink" title="3.图片质量必须高，不然显示不出来（比如QQ截图就基本上不行）"></a>3.图片质量必须高，不然显示不出来（比如QQ截图就基本上不行）</h5><h5 id="4-AJAX跨域请求，需加-jQuery-support-cors-true"><a href="#4-AJAX跨域请求，需加-jQuery-support-cors-true" class="headerlink" title="4.AJAX跨域请求，需加 jQuery.support.cors = true;"></a>4.AJAX跨域请求，需加 jQuery.support.cors = true;</h5><h5 id="5-阻止冒泡"><a href="#5-阻止冒泡" class="headerlink" title="5.阻止冒泡"></a>5.阻止冒泡</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">stopEventBubble: <span class="keyword">function</span> (event) &#123;</div><div class="line">            var e = event || window.event;</div><div class="line">            <span class="keyword">if</span> (e &amp;&amp; e.stopPropagation) &#123;</div><div class="line">                e.stopPropagation();</div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                e.cancelBubble = <span class="literal">true</span>;</div><div class="line">            &#125;</div><div class="line">        &#125;,</div></pre></td></tr></table></figure>
 <h5 id="6-阻止默认事件（比如表单刷新）"><a href="#6-阻止默认事件（比如表单刷新）" class="headerlink" title="6.阻止默认事件（比如表单刷新）"></a>6.阻止默认事件（比如表单刷新）</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">stopBase: <span class="keyword">function</span> (event) &#123;</div><div class="line">           var e = event || window.event;</div><div class="line">           <span class="keyword">if</span> (e &amp;&amp; e.preventDefault) &#123;</div><div class="line">               e.preventDefault();</div><div class="line">           &#125; <span class="keyword">else</span> &#123;</div><div class="line">               window.event.returnValue = <span class="literal">false</span>;</div><div class="line">           &#125;</div><div class="line">           <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">       &#125;,</div></pre></td></tr></table></figure>
-<h5 id="7-键盘事件绑定"><a href="#7-键盘事件绑定" class="headerlink" title="7.键盘事件绑定"></a>7.键盘事件绑定</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#queryInput"</span>).bind(<span class="string">'keydown'</span>, <span class="keyword">function</span> (e) &#123;</div><div class="line">       var key = e.which;</div><div class="line">       <span class="keyword">if</span> (key === 13) &#123;</div><div class="line">           e.preventDefault(); //不能少</div><div class="line">       &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h5 id="7-键盘事件绑定"><a href="#7-键盘事件绑定" class="headerlink" title="7.键盘事件绑定"></a>7.键盘事件绑定</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#queryInput"</span>).<span class="built_in">bind</span>(<span class="string">'keydown'</span>, <span class="keyword">function</span> (e) &#123;</div><div class="line">       var key = e.which;</div><div class="line">       <span class="keyword">if</span> (key === 13) &#123;</div><div class="line">           e.preventDefault(); //不能少</div><div class="line">       &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h5 id="8-pushState不能用-location-hash代替"><a href="#8-pushState不能用-location-hash代替" class="headerlink" title="8.pushState不能用 location.hash代替"></a>8.pushState不能用 location.hash代替</h5>
       
 
@@ -278,18 +279,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/03/27/ajax几点问题/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/04/17/滚动条滚到特定位置/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          AJAX几点问题
+          滚动条滚到特定位置
         
       </div>
     </a>
   
   
-    <a href="/2017/04/17/滚动条滚到特定位置/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">滚动条滚到特定位置</div>
+    <a href="/2017/03/27/ajax几点问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">AJAX几点问题</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -321,11 +322,12 @@
     		&copy; 2017 胡永迪
     	</div>
       	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+          Hosted by Coding Pages
       	</div>
     </div>
   </div>
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
