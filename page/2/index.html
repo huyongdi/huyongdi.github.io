@@ -169,6 +169,132 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-来随便聊聊" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/03/来随便聊聊/">随便聊几句</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/03/来随便聊聊/" class="archive-article-date">
+  	<time datetime="2017-03-03T06:02:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>大学同学搞了个微信公众号，想记录一下我们最近几年写的东西，然后不知道过多少年再寄给我们。内容全部由一些小伙伴操刀，这次轮到我了.<br>想着作为程序员在txt或者word上面写太low了，打开编辑器，就顺便写在我的网站上面吧.</p>
+<p>——分割线——</p>
+<p>忙了一上午，饭都比平时晚半个小时去吃，趴了一会，嗯，虽然没睡着，但是可以来BB两句了.<br>首先，去TMD的，今天离站台还有10米，公交车又开走了，没错是又，昨天也错过了，我下个电梯的时间，公交车居然开了三站路… 万万没想到啊，武汉的公交车居然能跑这么快，这是我搬过来快四个月，唯一两次错过(这样说好像有什么不对劲，又好像没什么不妥).<br>那么问题来了，我迟到了没有呢？然而并没有，8.30上班，8.26就按了我的大拇指打卡，中途还花时间买了一个饼一杯豆浆，话说，园区食堂的豆浆真是黑啊，2块钱一杯，excuse me?<br>
+        
+          <a class="article-more-a" href="/2017/03/03/来随便聊聊/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-让ES6在浏览器内运行" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/01/让ES6在浏览器内运行/">让ES6在浏览器内运行</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/01/让ES6在浏览器内运行/" class="archive-article-date">
+  	<time datetime="2017-03-01T06:32:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用ES6编写程序，浏览器不一定支持，这个时候就需要将ES6转化为ES5</p>
+<h3 id="浏览器环境"><a href="#浏览器环境" class="headerlink" title="浏览器环境"></a>浏览器环境</h3><p>以文件都放在同一目录为例：</p>
+<h4 id="1-Traceur转码器"><a href="#1-Traceur转码器" class="headerlink" title="1.Traceur转码器"></a>1.Traceur转码器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">main.html</div><div class="line">&lt;script src=<span class="string">"http://google.github.io/traceur-compiler/bin/traceur.js"</span>&gt;&lt;/script&gt;&lt;!-- 加载Traceur编译器 --&gt;</div><div class="line">&lt;script src=<span class="string">"https://google.github.io/traceur-compiler/bin/BrowserSystem.js"</span>&gt;&lt;/script&gt;&lt;!-- 加载Traceur编译器 --&gt;</div><div class="line">&lt;script src=<span class="string">"http://google.github.io/traceur-compiler/src/bootstrap.js"</span>&gt;&lt;/script&gt;&lt;!-- 将Traceur编译器用于网页 --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"module"</span> src=<span class="string">"main.js"</span>&gt;&lt;/script&gt;  &lt;!--module类型的引入才会被编码器识别为ES6文件--&gt;</div><div class="line">  </div><div class="line">main.js</div><div class="line">import &#123; square, diag &#125; from <span class="string">'profile.js'</span>; //注意文件路径</div></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2017/03/01/让ES6在浏览器内运行/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-ES6-入门整理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -636,118 +762,6 @@
 		</ul>
 	</div>
 
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-太阳公公" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/太阳公公/">太阳公公</a>
-    </h1>
-  
-
-        
-        <a href="/2016/11/04/太阳公公/" class="archive-article-date">
-  	<time datetime="2016-11-04T07:47:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>去见你想见的人吧。趁阳光正好。趁微风不噪。<br>趁繁花还未开至荼蘼。趁现在还年轻，还可以走很长很长的路，还能诉说很深很深的思念。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-coding-域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/28/hexo-coding-域名/">hexo+coding+域名</a>
-    </h1>
-  
-
-        
-        <a href="/2016/10/28/hexo-coding-域名/" class="archive-article-date">
-  	<time datetime="2016-10-28T07:53:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>由于国内站点访问github太慢，记录一下设置blog到coding</p>
-<p>hexo命令以及依赖软件/设置就不写了（上一篇已经提到过）</p>
-<h3 id="1-修改blog工程文件"><a href="#1-修改blog工程文件" class="headerlink" title="1.修改blog工程文件"></a>1.修改blog工程文件</h3><p>根目录下的_config.yml文件：<br>&nbsp;&nbsp;&nbsp;&nbsp;修改deploy下的resp路径即可</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository:</div><div class="line">      <span class="comment">#github: git@github.com:huyongdi/huyongdi.github.io.git</span></div><div class="line">      coding: git@git.coding.net:hyd_dev/hyd_dev.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/10/28/hexo-coding-域名/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
 
       
 
