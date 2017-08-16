@@ -169,6 +169,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vue实现简单的分页功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/08/vue实现简单的分页功能/">vue实现简单的分页功能</a>
+    </h1>
+  
+
+        
+        <a href="/2017/03/08/vue实现简单的分页功能/" class="archive-article-date">
+  	<time datetime="2017-03-08T06:56:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在vue的基础上实现简单的分页逻辑，记录一下.</p>
+<p>html文件:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;div id=<span class="string">"app"</span> class=<span class="string">"text-center"</span> v-show=<span class="string">"!!allPage"</span>&gt;</div><div class="line">     &lt;nav&gt;</div><div class="line">       &lt;ul class=<span class="string">"pagination"</span>&gt;</div><div class="line">           &lt;!--上一页逻辑--&gt;</div><div class="line">           &lt;li v-if=<span class="string">'current == 1'</span> class=<span class="string">'disabled'</span>&gt;&lt;span class=<span class="string">'color-a'</span>&gt;&amp;laquo;上一页&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;li v-else @click=<span class="string">'current-- &amp;&amp; goTo(current--)'</span>&gt;&lt;span class=<span class="string">'color-a'</span>&gt;&amp;laquo;上一页&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;!--中间页码--&gt;</div><div class="line">           &lt;li v-for=<span class="string">"index in pages"</span> @click=<span class="string">"goTo(index)"</span> :class=<span class="string">"&#123;'active':current == index&#125;"</span>&gt;&lt;span class=<span class="string">"color-a"</span>&gt;&#123;&#123;index&#125;&#125;&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;!--下一页逻辑--&gt;</div><div class="line">           &lt;li v-if=<span class="string">"allPage == current || allPage == 0"</span> class=<span class="string">"disabled"</span>&gt;&lt;span class=<span class="string">"color-a"</span>&gt;下一页&amp;raquo;&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;li @click=<span class="string">"current++ &amp;&amp; goTo(current++)"</span> :class=<span class="string">"&#123;'disabled':allPage == current || allPage == 0&#125;"</span>&gt;&lt;span class=<span class="string">"color-a"</span>&gt;下一页&amp;raquo;&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;!--跳转逻辑--&gt;</div><div class="line">           &lt;li class=<span class="string">""</span>&gt;&lt;span class=<span class="string">"color-a toPage"</span>&gt;第&lt;input v-model=<span class="string">"current"</span> @keyup.enter=<span class="string">"goTo(current)"</span>&gt;页/共&#123;&#123;allPage&#125;&#125;页&lt;/span&gt;&lt;/li&gt;</div><div class="line">       &lt;/ul&gt;</div><div class="line">     &lt;/nav&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
+        
+          <a class="article-more-a" href="/2017/03/08/vue实现简单的分页功能/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-来随便聊聊" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -695,68 +757,6 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-记录一些知识点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/09/记录一些知识点/">知识点(代码为主)</a>
-    </h1>
-  
-
-        
-        <a href="/2016/11/09/记录一些知识点/" class="archive-article-date">
-  	<time datetime="2016-11-09T03:31:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>对自己而言用得少或者容易忘的</p>
-<h4 id="1-垂直对齐"><a href="#1-垂直对齐" class="headerlink" title="1.垂直对齐"></a>1.垂直对齐</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">1.inner&#123;</div><div class="line">    position: relative;</div><div class="line">    top: 50%;</div><div class="line">    -webkit-transform: translateY(-50%);</div><div class="line">    -o-transform: translateY(-50%);</div><div class="line">    transform: translateY(-50%);</div><div class="line">&#125;</div><div class="line">2.parent &#123;</div><div class="line">  position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line">  position: absolute;</div><div class="line">  top: 50%;</div><div class="line">  transform: translateY(-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/11/09/记录一些知识点/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
         		</li>
       		
 		</ul>

@@ -169,6 +169,67 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-chrom浏览器12px字体" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/15/chrom浏览器12px字体/">chrom浏览器12px字体</a>
+    </h1>
+  
+
+        
+        <a href="/2017/08/15/chrom浏览器12px字体/" class="archive-article-date">
+  	<time datetime="2017-08-15T12:48:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-chrome限制12px以下的-依旧12px"><a href="#1-chrome限制12px以下的-依旧12px" class="headerlink" title="1.chrome限制12px以下的 依旧12px"></a>1.chrome限制12px以下的 依旧12px</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-webkit-text-size-adjust:none; //以前版本chrome适用，现在只有手机端可以用了</div></pre></td></tr></table></figure>
+<p>最新版本chrome要用新的办法了：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">font-size: 12px;</div><div class="line">transform: scale(0.8); /*2D缩放*/</div><div class="line">display: inline-block;</div></pre></td></tr></table></figure></p>
+<h3 id="2-题外话1–git报错修改"><a href="#2-题外话1–git报错修改" class="headerlink" title="2.题外话1–git报错修改"></a>2.题外话1–git报错修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">fatal: unable to access <span class="string">'https://git.oschina.net/GrandOmics/GrandBox-Analyze-HTML.git/'</span>: error setting certificate verify locations:</div><div class="line">  CAfile: C:/SSD/office/git/mingw64/libexec/ssl/certs/ca-bundle.crt</div><div class="line">  CApath: none</div><div class="line"></div><div class="line">git config --system http.sslverify <span class="literal">false</span> //此句即可</div></pre></td></tr></table></figure>
+<h3 id="3-题外话2–hexo找不到git"><a href="#3-题外话2–hexo找不到git" class="headerlink" title="3.题外话2–hexo找不到git"></a>3.题外话2–hexo找不到git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">ERROR Deployer not found: Git</div><div class="line"></div><div class="line">npm install --save hexo-deployer-git //此句即可</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-杂项02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -691,68 +752,6 @@
 <h4 id="1-在vue实例里面获得input的值"><a href="#1-在vue实例里面获得input的值" class="headerlink" title="1.在vue实例里面获得input的值"></a>1.在vue实例里面获得input的值</h4><p>HTML:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&lt;div class=<span class="string">"searchBorder"</span> id=<span class="string">"search_gene"</span>&gt;</div><div class="line">     &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> class=<span class="string">"form-control"</span> @keyup.enter=<span class="string">"onEnter"</span> ref=<span class="string">"searchInput"</span>&gt; &lt;!--ref值--&gt;</div><div class="line">     &lt;button class=<span class="string">"search-btn myBtn"</span> @click=<span class="string">"onEnter"</span>&gt;&lt;/button&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
         
           <a class="article-more-a" href="/2017/03/16/Vue.js的几点细节/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-vue实现简单的分页功能" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/08/vue实现简单的分页功能/">vue实现简单的分页功能</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/08/vue实现简单的分页功能/" class="archive-article-date">
-  	<time datetime="2017-03-08T06:56:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在vue的基础上实现简单的分页逻辑，记录一下.</p>
-<p>html文件:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;div id=<span class="string">"app"</span> class=<span class="string">"text-center"</span> v-show=<span class="string">"!!allPage"</span>&gt;</div><div class="line">     &lt;nav&gt;</div><div class="line">       &lt;ul class=<span class="string">"pagination"</span>&gt;</div><div class="line">           &lt;!--上一页逻辑--&gt;</div><div class="line">           &lt;li v-if=<span class="string">'current == 1'</span> class=<span class="string">'disabled'</span>&gt;&lt;span class=<span class="string">'color-a'</span>&gt;&amp;laquo;上一页&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;li v-else @click=<span class="string">'current-- &amp;&amp; goTo(current--)'</span>&gt;&lt;span class=<span class="string">'color-a'</span>&gt;&amp;laquo;上一页&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;!--中间页码--&gt;</div><div class="line">           &lt;li v-for=<span class="string">"index in pages"</span> @click=<span class="string">"goTo(index)"</span> :class=<span class="string">"&#123;'active':current == index&#125;"</span>&gt;&lt;span class=<span class="string">"color-a"</span>&gt;&#123;&#123;index&#125;&#125;&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;!--下一页逻辑--&gt;</div><div class="line">           &lt;li v-if=<span class="string">"allPage == current || allPage == 0"</span> class=<span class="string">"disabled"</span>&gt;&lt;span class=<span class="string">"color-a"</span>&gt;下一页&amp;raquo;&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;li @click=<span class="string">"current++ &amp;&amp; goTo(current++)"</span> :class=<span class="string">"&#123;'disabled':allPage == current || allPage == 0&#125;"</span>&gt;&lt;span class=<span class="string">"color-a"</span>&gt;下一页&amp;raquo;&lt;/span&gt;&lt;/li&gt;</div><div class="line">           &lt;!--跳转逻辑--&gt;</div><div class="line">           &lt;li class=<span class="string">""</span>&gt;&lt;span class=<span class="string">"color-a toPage"</span>&gt;第&lt;input v-model=<span class="string">"current"</span> @keyup.enter=<span class="string">"goTo(current)"</span>&gt;页/共&#123;&#123;allPage&#125;&#125;页&lt;/span&gt;&lt;/li&gt;</div><div class="line">       &lt;/ul&gt;</div><div class="line">     &lt;/nav&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure></p>
-        
-          <a class="article-more-a" href="/2017/03/08/vue实现简单的分页功能/#more">more >></a>
         
       
 
