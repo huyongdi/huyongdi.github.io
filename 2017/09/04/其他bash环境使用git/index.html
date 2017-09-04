@@ -7,19 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="huyongdi.com">
   <link rel="shortcut icon" href="http://ofqtnubd0.bkt.clouddn.com/fire.png" type="image/x-icon">
-  <title>Archives | H-blog</title>
+  <title>其他bash环境使用git | H-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
+  <meta name="description" content="git自带的bash，不能合并窗口，xshell windows下面tab不能补全，改注册表也不行为了工作的方便，用上了mobaxterm，记录一下bash下配置git 补充更新：可以在设置里面勾选用windows的PATH就好了。 下面的还是记录一下：思路就是在C:\Users\hyd\Documents\MobaXterm\home下面加一个.bashrc文件。文件内容是：export PAT">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,编程,代码,开源, IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验 webpack 配置  jquery bootstrap ">
-<meta property="og:type" content="website">
-<meta property="og:title" content="H-blog">
-<meta property="og:url" content="huyongdi.com/archives/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="其他bash环境使用git">
+<meta property="og:url" content="huyongdi.com/2017/09/04/其他bash环境使用git/index.html">
 <meta property="og:site_name" content="H-blog">
-<meta property="og:description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
+<meta property="og:description" content="git自带的bash，不能合并窗口，xshell windows下面tab不能补全，改注册表也不行为了工作的方便，用上了mobaxterm，记录一下bash下配置git 补充更新：可以在设置里面勾选用windows的PATH就好了。 下面的还是记录一下：思路就是在C:\Users\hyd\Documents\MobaXterm\home下面加一个.bashrc文件。文件内容是：export PAT">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-09-04T07:27:02.458Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="H-blog">
-<meta name="twitter:description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
+<meta name="twitter:title" content="其他bash环境使用git">
+<meta name="twitter:description" content="git自带的bash，不能合并窗口，xshell windows下面tab不能补全，改注册表也不行为了工作的方便，用上了mobaxterm，记录一下bash下配置git 补充更新：可以在设置里面勾选用windows的PATH就好了。 下面的还是记录一下：思路就是在C:\Users\hyd\Documents\MobaXterm\home下面加一个.bashrc文件。文件内容是：export PAT">
   
     <link rel="alternative" href="/atom.xml" title="H-blog" type="application/atom+xml">
   
@@ -167,37 +168,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-其他bash环境使用git" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      其他bash环境使用git
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/04/其他bash环境使用git/" class="archive-article-date">
+
+        
+        <a href="/2017/09/04/其他bash环境使用git/" class="archive-article-date">
   	<time datetime="2017-09-04T06:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/04/其他bash环境使用git/">其他bash环境使用git</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>git自带的bash，不能合并窗口，xshell windows下面tab不能补全，改注册表也不行<br>为了工作的方便，用上了mobaxterm，记录一下bash下配置git</p>
+<p>补充更新：可以在设置里面勾选用windows的PATH就好了。</p>
+<p>下面的还是记录一下：<br>思路就是在C:\Users\hyd\Documents\MobaXterm\home下面加一个.bashrc文件。<br>文件内容是：export PATH=/drives/e/Git/cmd:$PATH</p>
+<p>如果要用到ssh，新建或者将以前的.ssh目录复制到home目录下即可</p>
+<p>下面是已经配好的情况，步骤相同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">[2017-09-04 14:35.38]  /drives/e/workspace/GrandBox-Analyze-HTML</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">cd</span> ~</div><div class="line"></div><div class="line">[2017-09-04 14:35.54]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">echo</span> <span class="variable">$PATH</span></div><div class="line">/bin:/drives/e/Git/cmd:/bin:/drives/c/Users/GRANDO~1/DOCUME~1/MobaXterm/slash/bin:/drives/c/WINDOWS:/drives/c/WINDOWS/system32</div><div class="line"></div><div class="line">[2017-09-04 14:36.10]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">which</span> git</div><div class="line">/drives/e/Git/cmd/git</div><div class="line"></div><div class="line">[2017-09-04 14:37.36]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">pwd</span></div><div class="line">/home/mobaxterm</div><div class="line"></div><div class="line">[2017-09-04 14:37.44]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ vi .bashrc</div></pre></td></tr></table></figure></p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -210,363 +214,90 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http:huyongdi.com/2017/09/04/其他bash环境使用git/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/31/bootstrap源码-弹框垂直居中/" class="archive-article-date">
-  	<time datetime="2017-08-31T08:54:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-31</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/31/bootstrap源码-弹框垂直居中/">bootstrap源码-弹框垂直居中</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/31/bootstrap源码-弹框垂直居中/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">bootstrap源码-弹框垂直居中</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/15/chrom浏览器12px字体/" class="archive-article-date">
-  	<time datetime="2017-08-15T12:48:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/15/chrom浏览器12px字体/">chrom浏览器12px字体</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/03/杂项02/" class="archive-article-date">
-  	<time datetime="2017-08-03T08:11:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/03/杂项02/">杂项02</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/03/杂项01/" class="archive-article-date">
-  	<time datetime="2017-08-03T07:08:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/03/杂项01/">杂项01</a>
-    </h1>
+    <div class="duoshuo">
+      <div id="uyan_frame"></div>
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2130878"></script>
+    </div>
   
 
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/06/16/几个小知识/" class="archive-article-date">
-  	<time datetime="2017-06-16T08:27:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/06/16/几个小知识/">几个小知识</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/05/24/vue组件通信/" class="archive-article-date">
-  	<time datetime="2017-05-24T02:14:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-05-24</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/05/24/vue组件通信/">vue组件通信</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/21/webpack添加全局jquery/" class="archive-article-date">
-  	<time datetime="2017-04-21T00:56:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/21/webpack添加全局jquery/">webpack添加全局jquery以及使用bootstrap</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/17/滚动条滚到特定位置/" class="archive-article-date">
-  	<time datetime="2017-04-17T01:01:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/17/滚动条滚到特定位置/">滚动条滚到特定位置</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/01/记录几个问题/" class="archive-article-date">
-  	<time datetime="2017-04-01T08:56:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-01</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/01/记录几个问题/">记录几个问题</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -590,8 +321,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

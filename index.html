@@ -169,6 +169,69 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-其他bash环境使用git" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/04/其他bash环境使用git/">其他bash环境使用git</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/04/其他bash环境使用git/" class="archive-article-date">
+  	<time datetime="2017-09-04T06:34:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>git自带的bash，不能合并窗口，xshell windows下面tab不能补全，改注册表也不行<br>为了工作的方便，用上了mobaxterm，记录一下bash下配置git</p>
+<p>补充更新：可以在设置里面勾选用windows的PATH就好了。</p>
+<p>下面的还是记录一下：<br>思路就是在C:\Users\hyd\Documents\MobaXterm\home下面加一个.bashrc文件。<br>文件内容是：export PATH=/drives/e/Git/cmd:$PATH</p>
+<p>如果要用到ssh，新建或者将以前的.ssh目录复制到home目录下即可</p>
+<p>下面是已经配好的情况，步骤相同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">[2017-09-04 14:35.38]  /drives/e/workspace/GrandBox-Analyze-HTML</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">cd</span> ~</div><div class="line"></div><div class="line">[2017-09-04 14:35.54]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">echo</span> <span class="variable">$PATH</span></div><div class="line">/bin:/drives/e/Git/cmd:/bin:/drives/c/Users/GRANDO~1/DOCUME~1/MobaXterm/slash/bin:/drives/c/WINDOWS:/drives/c/WINDOWS/system32</div><div class="line"></div><div class="line">[2017-09-04 14:36.10]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">which</span> git</div><div class="line">/drives/e/Git/cmd/git</div><div class="line"></div><div class="line">[2017-09-04 14:37.36]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ <span class="built_in">pwd</span></div><div class="line">/home/mobaxterm</div><div class="line"></div><div class="line">[2017-09-04 14:37.44]  ~</div><div class="line">[hyd.DESKTOP-V1KHOAD] ➤ vi .bashrc</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-bootstrap源码-弹框垂直居中" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -692,64 +755,6 @@
         
           <a class="article-more-a" href="/2017/04/01/记录几个问题/#more">more >></a>
         
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-ajax几点问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/27/ajax几点问题/">AJAX几点问题</a>
-    </h1>
-  
-
-        
-        <a href="/2017/03/27/ajax几点问题/" class="archive-article-date">
-  	<time datetime="2017-03-27T04:18:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h4 id="Form表单上传文件"><a href="#Form表单上传文件" class="headerlink" title="Form表单上传文件"></a>Form表单上传文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">const formDara = new FormData($(<span class="string">"#uploadForm"</span>)[0]);</div><div class="line">   $.ajax(&#123;</div><div class="line">            <span class="built_in">type</span>: <span class="string">'POST'</span>,</div><div class="line">            url: <span class="string">''</span>,</div><div class="line">            data: formDara,</div><div class="line">            cache: <span class="literal">false</span>,</div><div class="line">            processData: <span class="literal">false</span>,</div><div class="line">            contentType: <span class="literal">false</span>,</div><div class="line">            beforeSend: <span class="keyword">function</span> (xhr) &#123;</div><div class="line">              // xhr.setRequestHeader(<span class="string">"Authorization"</span>, <span class="string">'Token '</span> + window.localStorage.getItem(<span class="string">'nextToken'</span>));</div><div class="line">              // xhr.setRequestHeader(<span class="string">"Content-Type"</span>, <span class="string">" multipart/form-data; boundary=----------------------------4ebf00fbcf09"</span>);</div><div class="line">              // xhr.setRequestHeader(<span class="string">"Content-Type"</span>, <span class="string">"multipart/form-data"</span>);</div><div class="line">            &#125;,</div><div class="line">            success: <span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">              alert(<span class="string">"批量添加成功"</span>)</div><div class="line">            &#125;</div><div class="line">   &#125;);</div></pre></td></tr></table></figure>
       
 
       
