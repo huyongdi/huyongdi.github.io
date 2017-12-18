@@ -7,13 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="huyongdi.com">
   <link rel="shortcut icon" href="http://ofqtnubd0.bkt.clouddn.com/fire.png" type="image/x-icon">
-  <title>H-blog</title>
+  <title>Archives: 2017/12 | H-blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
 <meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,编程,代码,开源, IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验 webpack 配置  jquery bootstrap ">
 <meta property="og:type" content="website">
 <meta property="og:title" content="H-blog">
-<meta property="og:url" content="huyongdi.com/page/3/index.html">
+<meta property="og:url" content="huyongdi.com/archives/2017/12/index.html">
 <meta property="og:site_name" content="H-blog">
 <meta property="og:description" content="胡永迪 hexo配置域名 git 微信服务号红包 jquery右键菜单">
 <meta property="og:locale" content="zh-Hans">
@@ -169,40 +169,35 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Vue.js响应式问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-      <header class="article-header">
-        
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/12/18/杂项03/" class="archive-article-date">
+  	<time datetime="2017-12-18T08:09:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-18</time>
+</a>
+        </div>
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/19/Vue.js响应式问题/">vue.js响应式问题</a>
+      <a class="archive-article-title" href="/2017/12/18/杂项03/">杂项03</a>
     </h1>
   
 
-        
-        <a href="/2017/01/19/Vue.js响应式问题/" class="archive-article-date">
-  	<time datetime="2017-01-19T00:49:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>首先批评一下自己，都学了快一个月的vue.js，连响应式双向绑定都没完全理解。<br>直到昨天晚上加班　　＝．＝</p>
-<p>一直用的是，通过mounted函数，将实例内的函数暴露给实例外调用，实现数据更新</p>
-<p>有２个问题需要注意：(ViewModel)</p>
-<p>１.　视图，也就是html里面，可以先判断数据是否存在，防止报错<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;span v-if=<span class="string">"subPanel.diseaseData"</span>&gt;&#123;&#123;subPanel.diseaseData.parent&#125;&#125;&lt;/span&gt;</div></pre></td></tr></table></figure></p>
-<p>这一点补充记录一下，是错的，具体情况比较复杂，简单的说不应该在一个实例里面套用另一个实例（3.16）<br>２.  管理数据，也就是JS里面，实现响应式，不仅data里面外接视图的变量需要声明，如果想实现改变变量里面某个属性，导致视图更新，<br>     需要提前具体的声明这个属性。 （错误总结，暂且不删）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$.each(subPanelLIst, <span class="keyword">function</span> (i, value) &#123; //确保申明变量，才能实现双向绑定</div><div class="line">       value.diseaseData = []</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
+        <div class="article-info info-on-right">
+          
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -215,435 +210,17 @@
 	</div>
 
 
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-
-
-
-
-
-
   
-    <article id="post-微信服务号红包" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/17/微信服务号红包/">微信服务号红包</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/17/微信服务号红包/" class="archive-article-date">
-  	<time datetime="2017-01-17T00:32:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-先获取到-AppSecret-应用密钥"><a href="#1-先获取到-AppSecret-应用密钥" class="headerlink" title="1.先获取到 AppSecret(应用密钥)"></a>1.先获取到 AppSecret(应用密钥)</h3><p>登录公众号之后，左侧导航最下面—开发—基本配置。如果没有显示<strong>生成</strong>，如果有会显示<strong>重置</strong><br><img src="http://7xt475.com1.z0.glb.clouddn.com/1.png" alt="左侧导航配图"> <img src="http://7xt475.com1.z0.glb.clouddn.com/11.png" alt="基本配置配图"></p>
-        
-          <a class="article-more-a" href="/2017/01/17/微信服务号红包/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-右键菜单" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/12/右键菜单/">右键菜单</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/12/右键菜单/" class="archive-article-date">
-  	<time datetime="2017-01-12T02:00:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>先阻止默认右键菜单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">document.getElementById(<span class="string">'elem'</span>).oncontextmenu = <span class="function"><span class="title">function</span></span> () &#123;  //只能是原生JS选择器</div><div class="line">      <span class="built_in">return</span> <span class="literal">false</span>;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<p>显示自己的菜单<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">elem.mousedown(<span class="keyword">function</span> (e) &#123; //可用jquery</div><div class="line">      <span class="keyword">if</span> (e.which == 3) &#123;//如果点击是右键点击的话</div><div class="line">        //显示自己的菜单 </div><div class="line">        //之后可能需要根据鼠标位置调整右键菜单位置  </div><div class="line">        var me = e || window.e;</div><div class="line">        var top = parseInt(me.clientY + document.body.scrollTop);</div><div class="line">        var left = parseInt(me.clientX);</div><div class="line">      &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-迎接2017" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/03/迎接2017/">迎接2017</a>
-    </h1>
-  
-
-        
-        <a href="/2017/01/03/迎接2017/" class="archive-article-date">
-  	<time datetime="2017-01-03T02:07:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="先说说去年："><a href="#先说说去年：" class="headerlink" title="先说说去年："></a>先说说去年：</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;工作方面，算是正式以菜鸟的身份进入前端行业。<br>&nbsp;&nbsp;&nbsp;&nbsp;生活方面，最近搬家了，勉强算是改善了环境，至少我想要的单独热水器暖灯卫生间+阳台有了，也不知道什么时候能有自己的房，这个话题就不说了。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;然后，这一年还给自己添置了新电脑+电信100M，美名其曰~程序员需要高配置，实际上是打游戏还是看小电影就自己知道就好（滑稽脸）。<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;总体来说，这一年不好也不坏，工资勉强够用，生活平平谈谈。<br>
-        
-          <a class="article-more-a" href="/2017/01/03/迎接2017/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-记录一些知识点" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/09/记录一些知识点/">知识点(代码为主)</a>
-    </h1>
-  
-
-        
-        <a href="/2016/11/09/记录一些知识点/" class="archive-article-date">
-  	<time datetime="2016-11-09T03:31:04.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>对自己而言用得少或者容易忘的</p>
-<h4 id="1-垂直对齐"><a href="#1-垂直对齐" class="headerlink" title="1.垂直对齐"></a>1.垂直对齐</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">1.inner&#123;</div><div class="line">    position: relative;</div><div class="line">    top: 50%;</div><div class="line">    -webkit-transform: translateY(-50%);</div><div class="line">    -o-transform: translateY(-50%);</div><div class="line">    transform: translateY(-50%);</div><div class="line">&#125;</div><div class="line">2.parent &#123;</div><div class="line">  position: relative;</div><div class="line">&#125;</div><div class="line">.child &#123;</div><div class="line">  position: absolute;</div><div class="line">  top: 50%;</div><div class="line">  transform: translateY(-50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/11/09/记录一些知识点/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-太阳公公" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/04/太阳公公/">太阳公公</a>
-    </h1>
-  
-
-        
-        <a href="/2016/11/04/太阳公公/" class="archive-article-date">
-  	<time datetime="2016-11-04T07:47:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>去见你想见的人吧。趁阳光正好。趁微风不噪。<br>趁繁花还未开至荼蘼。趁现在还年轻，还可以走很长很长的路，还能诉说很深很深的思念。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/essays/" class="article-tag-list-link color2">essays</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hexo-coding-域名" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/28/hexo-coding-域名/">hexo+coding+域名</a>
-    </h1>
-  
-
-        
-        <a href="/2016/10/28/hexo-coding-域名/" class="archive-article-date">
-  	<time datetime="2016-10-28T07:53:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>由于国内站点访问github太慢，记录一下设置blog到coding</p>
-<p>hexo命令以及依赖软件/设置就不写了（上一篇已经提到过）</p>
-<h3 id="1-修改blog工程文件"><a href="#1-修改blog工程文件" class="headerlink" title="1.修改blog工程文件"></a>1.修改blog工程文件</h3><p>根目录下的_config.yml文件：<br>&nbsp;&nbsp;&nbsp;&nbsp;修改deploy下的resp路径即可</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repository:</div><div class="line">      <span class="comment">#github: git@github.com:huyongdi/huyongdi.github.io.git</span></div><div class="line">      coding: git@git.coding.net:hyd_dev/hyd_dev.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
-        
-          <a class="article-more-a" href="/2016/10/28/hexo-coding-域名/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-简单记录配置hexo" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/10/28/简单记录配置hexo/">配置hexo</a>
-    </h1>
-  
-
-        
-        <a href="/2016/10/28/简单记录配置hexo/" class="archive-article-date">
-  	<time datetime="2016-10-28T01:04:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-10-28</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>记录一下搭建一个简单的hexo博客的路程</p>
-<h3 id="1-准备条件"><a href="#1-准备条件" class="headerlink" title="1.准备条件"></a>1.准备条件</h3><p>依赖配置：<br>&nbsp;&nbsp;&nbsp;git ：<a href="http://rogerdudler.github.io/git-guide/index.zh.html" target="_blank" rel="external">http://rogerdudler.github.io/git-guide/index.zh.html</a><br>&nbsp;&nbsp;&nbsp;nodeJs ：<a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></p>
-        
-          <a class="article-more-a" href="/2016/10/28/简单记录配置hexo/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/2/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-    </nav>
-  
 
 
           </div>
@@ -666,9 +243,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,

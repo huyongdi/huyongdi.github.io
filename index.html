@@ -169,6 +169,76 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-杂项03" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/18/杂项03/">杂项03</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/18/杂项03/" class="archive-article-date">
+  	<time datetime="2017-12-18T08:09:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-VUE-nextTick"><a href="#1-VUE-nextTick" class="headerlink" title="1.VUE $nextTick"></a>1.VUE $nextTick</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">watch:&#123;</div><div class="line">   results:<span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">     this.<span class="variable">$nextTick</span>(<span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">       //值影响的视图更新之后再做操作</div><div class="line">     &#125;)</div><div class="line">    &#125;</div><div class="line">&#125;,</div></pre></td></tr></table></figure>
+<h3 id="2-form表单添加对象"><a href="#2-form表单添加对象" class="headerlink" title="2.form表单添加对象"></a>2.form表单添加对象</h3><pre><code class="bash"><span class="built_in">let</span> postData = new FormData(document.getElementById(<span class="string">'addDataFormCap'</span>));
+postData.append(<span class="string">"type"</span>, JSON.stringify({<span class="string">'a'</span>: 123, <span class="string">'b'</span>: 456})); //添加对象
+</code></pre>
+<h3 id="3-ES6-async-await"><a href="#3-ES6-async-await" class="headerlink" title="3.ES6 async+await"></a>3.ES6 async+await</h3><pre><code class="bash">const doMessage = async ()=&gt; {
+    <span class="keyword">for</span> (<span class="built_in">let</span> val of notification) {
+       //这样函数运行完之后才会循环下一个
+       await _vue.showNotication(`<span class="variable">${val.data.sn}</span>`);
+    }
+}
+doMessage();
+</code></pre>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-多少天之后" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -692,66 +762,6 @@
 <h3 id="2-webpack配置文件内增加："><a href="#2-webpack配置文件内增加：" class="headerlink" title="2.webpack配置文件内增加："></a>2.webpack配置文件内增加：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var webpack = require(<span class="string">"webpack"</span>);</div><div class="line">module.exports = &#123;</div><div class="line">    resolve: &#123;</div><div class="line">            <span class="built_in">alias</span>: &#123;<span class="string">'jquery'</span>:<span class="string">'jquery'</span>&#125;</div><div class="line">    &#125;,</div><div class="line">    plugins: [</div><div class="line">        new webpack.ProvidePlugin(&#123;</div><div class="line">          $:<span class="string">"jquery"</span>,</div><div class="line">          jQuery:<span class="string">"jquery"</span>,</div><div class="line">        &#125;)</div><div class="line">    ], </div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="3-如果要引用bootstrap"><a href="#3-如果要引用bootstrap" class="headerlink" title="3.如果要引用bootstrap"></a>3.如果要引用bootstrap</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import <span class="string">'../node_modules/bootstrap/dist/css/bootstrap.min.css'</span></div><div class="line">import <span class="string">'../node_modules/bootstrap/dist/js/bootstrap.min.js'</span></div></pre></td></tr></table></figure>
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/web/" class="article-tag-list-link color4">web</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-滚动条滚到特定位置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/17/滚动条滚到特定位置/">滚动条滚到特定位置</a>
-    </h1>
-  
-
-        
-        <a href="/2017/04/17/滚动条滚到特定位置/" class="archive-article-date">
-  	<time datetime="2017-04-17T01:01:05.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-17</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="1-锚点"><a href="#1-锚点" class="headerlink" title="1.锚点"></a>1.锚点</h3><h3 id="2-改变scrollTop"><a href="#2-改变scrollTop" class="headerlink" title="2. 改变scrollTop"></a>2. 改变scrollTop</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//有时候会被影响并不能滚动 </div><div class="line">$(<span class="string">'html, body'</span>).animate(&#123;</div><div class="line">       scrollTop: $(<span class="string">"#id"</span>).offset().top</div><div class="line">&#125;, 2000);</div></pre></td></tr></table></figure>
-<h3 id="3-直接改变hash"><a href="#3-直接改变hash" class="headerlink" title="3.直接改变hash"></a>3.直接改变hash</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">window.location.hash = <span class="string">"#id"</span></div></pre></td></tr></table></figure>
-<h3 id="4-scrollIntoView让元素出现在顶部"><a href="#4-scrollIntoView让元素出现在顶部" class="headerlink" title="4.scrollIntoView让元素出现在顶部"></a>4.scrollIntoView让元素出现在顶部</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">document.getElementById(<span class="string">'tool'</span>).scrollIntoView(<span class="literal">true</span>);</div></pre></td></tr></table></figure>
       
 
       
